@@ -3,42 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - Kalil Guep</title>
+    <title>Portfolio - Belem Abdoul Kalilou</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <h1>Bonjour, je suis Kalil Guep 👋</h1>
-        <p class="subtitle">Ingénieur en conception et productique</p>
+        <!-- Sélecteur de langue -->
+        <div class="lang-switcher">
+            <button onclick="setLanguage('fr')" class="lang-btn active" id="btn-fr">FR</button>
+            <button onclick="setLanguage('en')" class="lang-btn" id="btn-en">EN</button>
+            <button onclick="setLanguage('ru')" class="lang-btn" id="btn-ru">RU</button>
+        </div>
+
+        <h1 data-i18n="greeting">Bonjour, je suis Belem Abdoul Kalilou 👋</h1>
+        <p class="subtitle" data-i18n="role">Ingénieur en conception et productique</p>
+        
         <div class="links">
             <a href="https://github.com/kalilguep-bit" target="_blank">GitHub</a>
             <a href="https://linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>
-            <a href="mailto:ton.email@exemple.com">Contact</a>
+            <a href="mailto:ton.email@exemple.com" data-i18n="contact">Contact</a>
         </div>
     </header>
 
     <main>
         <section id="about">
-            <h2>À propos de moi</h2>
-            <p>Ingénieur passionné par la conception et la productique. Je suis spécialisé dans l'optimisation des processus de production et le développement de solutions innovantes.</p>
+            <h2 data-i18n="about_title">À propos de moi</h2>
+            <p data-i18n="about_text">Ingénieur passionné par la conception et la productique. Je suis spécialisé dans l'optimisation des processus de production et le développement de solutions innovantes pour améliorer l'efficacité industrielle.</p>
+        </section>
+
+        <section id="skills">
+            <h2 data-i18n="skills_title">Compétences</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Conception CAO (SolidWorks, CATIA)</span>
+                <span class="skill-tag">Optimisation des processus</span>
+                <span class="skill-tag">Gestion de production</span>
+                <span class="skill-tag">Amélioration continue (Lean)</span>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Mes Projets</h2>
+            <h2 data-i18n="projects_title">Mes Projets</h2>
             <div class="project-grid">
                 
                 <div class="project-card">
-                    <h3>Projet 1</h3>
-                    <p>Description de ton premier projet. Technologies utilisées et objectifs atteints.</p>
-                    <a href="#" class="btn">Voir le code</a>
+                    <h3 data-i18n="proj1_title">Optimisation de ligne de production</h3>
+                    <p data-i18n="proj1_desc">Analyse et réorganisation d'une chaîne de montage pour réduire les temps de cycle de 15%.</p>
+                    <a href="#" class="btn" data-i18n="see_code">Voir les détails</a>
                 </div>
 
                 <div class="project-card">
-                    <h3>Projet 2</h3>
-                    <p>Description de ton deuxième projet. N'hésite pas à ajouter un lien vers une démo.</p>
-                    <a href="#" class="btn">Voir la démo</a>
+                    <h3 data-i18n="proj2_title">Conception d'un dispositif industriel</h3>
+                    <p data-i18n="proj2_desc">Modélisation 3D et prototypage d'un outil d'assemblage ergonomique pour les opérateurs.</p>
+                    <a href="#" class="btn" data-i18n="see_demo">Voir le projet</a>
                 </div>
 
             </div>
@@ -46,8 +64,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Kalil Guep. Fait avec ❤️ et hébergé sur GitHub Pages.</p>
+        <p data-i18n="footer">© 2024 Belem Abdoul Kalilou. Fait avec ❤️ et hébergé sur GitHub Pages.</p>
     </footer>
 
+    <!-- On lie le fichier JavaScript ici -->
+    <script src="script.js"></script>
 </body>
 </html>

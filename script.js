@@ -1,61 +1,81 @@
-// Dictionnaire des traductions
-const translations = {
-    fr: {
-        greeting: "Bonjour, je suis Belem Abdoul Kalilou 👋",
-        role: "Ingénieur en conception et productique",
-        contact: "Contact",
-        about_title: "À propos de moi",
-        about_text: "Ingénieur passionné par la conception et la productique. Je suis spécialisé dans l'optimisation des processus de production et le développement de solutions innovantes pour améliorer l'efficacité industrielle.",
-        skills_title: "Compétences",
-        projects_title: "Mes Projets",
-        proj1_title: "Optimisation de ligne de production",
-        proj1_desc: "Analyse et réorganisation d'une chaîne de montage pour réduire les temps de cycle de 15%.",
-        proj2_title: "Conception d'un dispositif industriel",
-        proj2_desc: "Modélisation 3D et prototypage d'un outil d'assemblage ergonomique pour les opérateurs.",
-        see_code: "Voir les détails",
-        see_demo: "Voir le projet",
-        footer: "© 2024 Belem Abdoul Kalilou. Fait avec ❤️ et hébergé sur GitHub Pages."
+// 1. DONNÉES DES PROJETS (Pour la fenêtre modale)
+// Tu pourras ajouter autant de projets que tu veux ici, avec leurs images et descriptions détaillées.
+const projectsData = {
+    proj1: {
+        fr: { title: "Optimisation de ligne de production", desc: "Dans le cadre de mon projet de fin d'études, j'ai analysé une chaîne de montage existante. En appliquant les principes du Lean Manufacturing, j'ai réorganisé les postes de travail, ce qui a permis de réduire les temps de cycle de 15% et d'éliminer les goulots d'étranglement.", tags: ["Lean", "SolidWorks", "Analyse de données"] },
+        en: { title: "Production Line Optimization", desc: "For my final year project, I analyzed an existing assembly line. By applying Lean Manufacturing principles, I reorganized workstations, which reduced cycle times by 15% and eliminated bottlenecks.", tags: ["Lean", "SolidWorks", "Data Analysis"] },
+        ru: { title: "Оптимизация производственной линии", desc: "В рамках моего дипломного проекта я проанализировал существующую сборочную линию. Применяя принципы бережливого производства, я реорганизовал рабочие места, что позволило сократить время цикла на 15% и устранить узкие места.", tags: ["Бережливое производство", "SolidWorks", "Анализ данных"] }
     },
-    en: {
-        greeting: "Hello, I am Belem Abdoul Kalilou 👋",
-        role: "Design and Manufacturing Engineer",
-        contact: "Contact",
-        about_title: "About Me",
-        about_text: "Engineer passionate about design and manufacturing. I specialize in optimizing production processes and developing innovative solutions to improve industrial efficiency.",
-        skills_title: "Skills",
-        projects_title: "My Projects",
-        proj1_title: "Production Line Optimization",
-        proj1_desc: "Analysis and reorganization of an assembly line to reduce cycle times by 15%.",
-        proj2_title: "Industrial Device Design",
-        proj2_desc: "3D modeling and prototyping of an ergonomic assembly tool for operators.",
-        see_code: "See details",
-        see_demo: "View project",
-        footer: "© 2024 Belem Abdoul Kalilou. Made with ❤️ and hosted on GitHub Pages."
-    },
-    ru: {
-        greeting: "Здравствуйте, я Белем Абдул Калилу 👋",
-        role: "Инженер по проектированию и производству",
-        contact: "Контакт",
-        about_title: "Обо мне",
-        about_text: "Инженер, увлеченный проектированием и производством. Я специализируюсь на оптимизации производственных процессов и разработке инновационных решений для повышения промышленной эффективности.",
-        skills_title: "Навыки",
-        projects_title: "Мои проекты",
-        proj1_title: "Оптимизация производственной линии",
-        proj1_desc: "Анализ и реорганизация сборочной линии для сокращения времени цикла на 15%.",
-        proj2_title: "Проектирование промышленного устройства",
-        proj2_desc: "3D-моделирование и прототипирование эргономичного сборочного инструмента для операторов.",
-        see_code: "Подробнее",
-        see_demo: "Смотреть проект",
-        footer: "© 2024 Белем Абдул Калилу. Сделано с ❤️ и размещено на GitHub Pages."
+    proj2: {
+        fr: { title: "Conception d'un dispositif industriel", desc: "Conception et prototypage d'un outil d'assemblage ergonomique. J'ai réalisé la modélisation 3D sur CATIA, effectué des simulations de contraintes, et supervisé l'impression 3D du prototype pour des tests en conditions réelles avec les opérateurs.", tags: ["CATIA", "Prototypage", "Ergonomie"] },
+        en: { title: "Industrial Device Design", desc: "Design and prototyping of an ergonomic assembly tool. I performed 3D modeling in CATIA, ran stress simulations, and supervised the 3D printing of the prototype for real-world testing with operators.", tags: ["CATIA", "Prototyping", "Ergonomics"] },
+        ru: { title: "Проектирование промышленного устройства", desc: "Проектирование и прототипирование эргономичного сборочного инструмента. Я выполнил 3D-моделирование в CATIA, провел симуляцию напряжений и контролировал 3D-печать прототипа для тестирования в реальных условиях с операторами.", tags: ["CATIA", "Прототипирование", "Эргономика"] }
     }
 };
 
-// Fonction pour changer la langue
+// 2. TRADUCTIONS GÉNÉRALES DE LA PAGE
+const translations = {
+    fr: {
+        name: "Belem Abdoul Kalilou",
+        role: "Ingénieur en conception et productique",
+        email: "Email",
+        about_title: "À propos de moi",
+        about_text: "Ingénieur passionné par la conception et la productique. Je suis spécialisé dans l'optimisation des processus de production et le développement de solutions innovantes pour améliorer l'efficacité industrielle.",
+        skills_title: "Compétences",
+        skill_process: "Optimisation",
+        skill_process_desc: "Lean Manufacturing, 5S, Kaizen",
+        skill_management: "Gestion",
+        skill_management_desc: "Planification, Gestion de projet",
+        projects_title: "Mes Projets",
+        proj1_title: "Optimisation de ligne",
+        proj1_short: "Réduction des temps de cycle de 15%.",
+        proj2_title: "Dispositif industriel",
+        proj2_short: "Modélisation 3D et prototypage ergonomique.",
+        read_more: "Lire la suite →"
+    },
+    en: {
+        name: "Belem Abdoul Kalilou",
+        role: "Design and Manufacturing Engineer",
+        email: "Email",
+        about_title: "About Me",
+        about_text: "Engineer passionate about design and manufacturing. I specialize in optimizing production processes and developing innovative solutions to improve industrial efficiency.",
+        skills_title: "Skills",
+        skill_process: "Optimization",
+        skill_process_desc: "Lean Manufacturing, 5S, Kaizen",
+        skill_management: "Management",
+        skill_management_desc: "Planning, Project Management",
+        projects_title: "My Projects",
+        proj1_title: "Line Optimization",
+        proj1_short: "Reduced cycle times by 15%.",
+        proj2_title: "Industrial Device",
+        proj2_short: "3D modeling and ergonomic prototyping.",
+        read_more: "Read more →"
+    },
+    ru: {
+        name: "Белем Абдул Калилу",
+        role: "Инженер по проектированию и производству",
+        email: "Эл. почта",
+        about_title: "Обо мне",
+        about_text: "Инженер, увлеченный проектированием и производством. Я специализируюсь на оптимизации производственных процессов и разработке инновационных решений для повышения промышленной эффективности.",
+        skills_title: "Навыки",
+        skill_process: "Оптимизация",
+        skill_process_desc: "Бережливое производство, 5S, Кайдзен",
+        skill_management: "Управление",
+        skill_management_desc: "Планирование, Управление проектами",
+        projects_title: "Мои проекты",
+        proj1_title: "Оптимизация линии",
+        proj1_short: "Сокращение времени цикла на 15%.",
+        proj2_title: "Промышленное устройство",
+        proj2_short: "3D-моделирование и эргономичное прототипирование.",
+        read_more: "Читать далее →"
+    }
+};
+
+// 3. FONCTION POUR CHANGER LA LANGUE
 function setLanguage(lang) {
-    // 1. Sauvegarder le choix dans le navigateur
     localStorage.setItem('preferredLanguage', lang);
     
-    // 2. Mettre à jour tous les textes
+    // Met à jour les textes simples
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
@@ -63,17 +83,51 @@ function setLanguage(lang) {
         }
     });
 
-    // 3. Mettre à jour l'apparence des boutons (mettre en évidence la langue active)
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
-    });
+    // Met à jour les boutons
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
     document.getElementById(`btn-${lang}`).classList.add('active');
-
-    // 4. Changer la langue de la balise <html> pour l'accessibilité
     document.documentElement.lang = lang;
 }
 
-// Au chargement de la page, vérifier la langue sauvegardée ou utiliser le français par défaut
+// 4. FONCTIONS POUR LA FENÊTRE MODALE
+function openModal(projectId) {
+    const lang = localStorage.getItem('preferredLanguage') || 'fr';
+    const project = projectsData[projectId][lang];
+    
+    // Remplir la modale avec les données
+    document.getElementById('modal-title').textContent = project.title;
+    document.getElementById('modal-desc').textContent = project.desc;
+    
+    // Pour l'instant, on utilise une image placeholder. Tu pourras la changer dynamiquement plus tard.
+    document.getElementById('modal-img').src = "https://via.placeholder.com/700x300"; 
+    
+    // Générer les tags
+    const tagsContainer = document.getElementById('modal-tags');
+    tagsContainer.innerHTML = '';
+    project.tags.forEach(tag => {
+        const span = document.createElement('span');
+        span.className = 'tag';
+        span.textContent = tag;
+        tagsContainer.appendChild(span);
+    });
+
+    // Afficher la modale
+    document.getElementById('projectModal').style.display = 'flex';
+}
+
+function closeModal() {
+    document.getElementById('projectModal').style.display = 'none';
+}
+
+// Fermer la modale si on clique en dehors du contenu
+window.onclick = function(event) {
+    const modal = document.getElementById('projectModal');
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+// Initialisation au chargement
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage') || 'fr';
     setLanguage(savedLang);

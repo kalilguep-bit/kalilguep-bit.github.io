@@ -9,65 +9,100 @@
 </head>
 <body>
 
-    <header>
-        <!-- Sélecteur de langue -->
-        <div class="lang-switcher">
-            <button onclick="setLanguage('fr')" class="lang-btn active" id="btn-fr">FR</button>
-            <button onclick="setLanguage('en')" class="lang-btn" id="btn-en">EN</button>
-            <button onclick="setLanguage('ru')" class="lang-btn" id="btn-ru">RU</button>
-        </div>
-
-        <h1 data-i18n="greeting">Bonjour, je suis Belem Abdoul Kalilou 👋</h1>
-        <p class="subtitle" data-i18n="role">Ingénieur en conception et productique</p>
-        
-        <div class="links">
-            <a href="https://github.com/dashboard" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/abdoul-kalilou-belem-4a754435a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJi3qQylgQXeUwTLgpZ4lPQ%3D%3D" target="_blank">LinkedIn</a>
-            <a href="a.belem0072@uca.ac.ma" data-i18n="contact">Email</a>
-        </div>
-    </header>
-
-    <main>
-        <section id="about">
-            <h2 data-i18n="about_title">À propos de moi</h2>
-            <p data-i18n="about_text">Ingénieur passionné par la conception et la productique. Je suis spécialisé dans l'optimisation des processus de production et le développement de solutions innovantes pour améliorer l'efficacité industrielle.</p>
-        </section>
-
-        <section id="skills">
-            <h2 data-i18n="skills_title">Compétences</h2>
-            <div class="skills-grid">
-                <span class="skill-tag">Conception CAO (SolidWorks, CATIA)</span>
-                <span class="skill-tag">Optimisation des processus</span>
-                <span class="skill-tag">Gestion de production</span>
-                <span class="skill-tag">Amélioration continue (Lean)</span>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2 data-i18n="projects_title">Mes Projets</h2>
-            <div class="project-grid">
+    <div class="container">
+        <!-- BARRE LATÉRALE (GAUCHE) -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <!-- Remplace 'photo.jpg' par le nom de ta vraie photo quand tu l'auras uploadée -->
+                <img src="https://via.placeholder.com/150" alt="Belem Abdoul Kalilou" class="profile-img">
+                <h1 data-i18n="name">Belem Abdoul Kalilou</h1>
+                <p class="subtitle" data-i18n="role">Ingénieur en conception et productique</p>
                 
-                <div class="project-card">
-                    <h3 data-i18n="proj1_title">Optimisation de ligne de production</h3>
-                    <p data-i18n="proj1_desc">Analyse et réorganisation d'une chaîne de montage pour réduire les temps de cycle de 15%.</p>
-                    <a href="#" class="btn" data-i18n="see_code">Voir les détails</a>
+                <div class="lang-switcher">
+                    <button onclick="setLanguage('fr')" class="lang-btn active" id="btn-fr">FR</button>
+                    <button onclick="setLanguage('en')" class="lang-btn" id="btn-en">EN</button>
+                    <button onclick="setLanguage('ru')" class="lang-btn" id="btn-ru">RU</button>
                 </div>
-
-                <div class="project-card">
-                    <h3 data-i18n="proj2_title">Conception d'un dispositif industriel</h3>
-                    <p data-i18n="proj2_desc">Modélisation 3D et prototypage d'un outil d'assemblage ergonomique pour les opérateurs.</p>
-                    <a href="#" class="btn" data-i18n="see_demo">Voir le projet</a>
-                </div>
-
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <p data-i18n="footer">© 2024 Belem Abdoul Kalilou. Fait avec ❤️ et hébergé sur GitHub Pages.</p>
-    </footer>
+            <nav class="social-links">
+                <a href="https://github.com/kalilguep-bit" target="_blank" class="social-btn">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/abdoul-kalilou-belem-4a754435a/" target="_blank" class="social-btn">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:a.belem0072@uca.ac.ma" class="social-btn">
+                    <span data-i18n="email">Email</span>
+                </a>
+            </nav>
+        </aside>
 
-    <!-- On lie le fichier JavaScript ici -->
+        <!-- ZONE PRINCIPALE (DROITE) -->
+        <main class="main-content">
+            <section id="about">
+                <h2 data-i18n="about_title">À propos de moi</h2>
+                <p data-i18n="about_text">Ingénieur passionné par la conception et la productique. Je suis spécialisé dans l'optimisation des processus de production et le développement de solutions innovantes pour améliorer l'efficacité industrielle.</p>
+            </section>
+
+            <section id="skills">
+                <h2 data-i18n="skills_title">Compétences</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>CAO / DAO</h4>
+                        <p>SolidWorks, CATIA, AutoCAD</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4 data-i18n="skill_process">Optimisation</h4>
+                        <p data-i18n="skill_process_desc">Lean Manufacturing, 5S, Kaizen</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4 data-i18n="skill_management">Gestion</h4>
+                        <p data-i18n="skill_management_desc">Planification, Gestion de projet</p>
+                    </div>
+                </div
+            </section>
+
+            <section id="projects">
+                <h2 data-i18n="projects_title">Mes Projets</h2>
+                <div class="project-grid">
+                    
+                    <!-- Projet 1 -->
+                    <div class="project-card" onclick="openModal('proj1')">
+                        <img src="https://via.placeholder.com/400x250" alt="Projet 1" class="project-img">
+                        <div class="project-info">
+                            <h3 data-i18n="proj1_title">Optimisation de ligne</h3>
+                            <p data-i18n="proj1_short">Réduction des temps de cycle de 15%.</p>
+                            <span class="read-more" data-i18n="read_more">Lire la suite →</span>
+                        </div
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="project-card" onclick="openModal('proj2')">
+                        <img src="https://via.placeholder.com/400x250" alt="Projet 2" class="project-img">
+                        <div class="project-info">
+                            <h3 data-i18n="proj2_title">Dispositif industriel</h3>
+                            <p data-i18n="proj2_short">Modélisation 3D et prototypage ergonomique.</p>
+                            <span class="read-more" data-i18n="read_more">Lire la suite →</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- FENÊTRE MODALE (Cachée par défaut) -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="Projet" class="modal-img">
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <div class="modal-tags" id="modal-tags"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

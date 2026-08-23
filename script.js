@@ -143,3 +143,13 @@ function openImageModal(imageSrc) {
 function closeImageModal() {
     document.getElementById("imageModal").style.display = "none";
 }
+
+// Empêcher la fermeture quand on clique sur la photo elle-même
+document.addEventListener('DOMContentLoaded', function() {
+    const modalImg = document.getElementById("expandedImage");
+    if (modalImg) {
+        modalImg.addEventListener('click', function(event) {
+            event.stopPropagation(); // Stoppe la propagation du clic
+        });
+    }
+});

@@ -49,7 +49,7 @@ const translations = {
         edu2_desc: "Acquisition de bases scientifiques et techniques solides, avec une introduction à la programmation, la modélisation et la résolution de problèmes complexes.",
         edu3_date: "2022",
         edu3_title: "Baccalauréat",
-        edu3_place: "Lycée, Maroc",
+        edu3_place: "Lycée Horizon International Ouagadougou",
         edu3_desc: "Obtention du diplôme avec la mention Bien."
     },
     en: {
@@ -87,7 +87,7 @@ const translations = {
         edu2_desc: "Acquisition of strong scientific and technical foundations, with an introduction to programming, modeling, and complex problem-solving.",
         edu3_date: "2022",
         edu3_title: "High School Diploma (Baccalauréat)",
-        edu3_place: "High School, Morocco",
+        edu3_place: "High School Horizon International Ouagadougou",
         edu3_desc: "Obtained the diploma with Honors (Mention Bien)."
     },
     ru: {
@@ -125,7 +125,7 @@ const translations = {
         edu2_desc: "Получение прочных научных и технических основ, включая знакомство с программированием, моделированием и решением сложных задач.",
         edu3_date: "2022",
         edu3_title: "Диплом о среднем образовании (Бакалавриат)",
-        edu3_place: "Лицей, Марокко",
+        edu3_place: "Lycée Horizon International Ouagadougou",
         edu3_desc: "Получение диплома с отличием (Mention Bien)."
     }
 };

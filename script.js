@@ -1,6 +1,6 @@
 // 1. DONNÉES DES PROJETS (Pour la fenêtre modale)
 const projectsData = {
-        proj1: { 
+    proj1: { 
         img: "biodig_3d.jpg",
         tags: ["SolidWorks", "FreeCAD", "FEA Simulation", "CSTR"],
         fr: { 
@@ -58,8 +58,8 @@ const projectsData = {
                    <p>Коэффициенты безопасности соответствуют стандартам. Полный технический пакет (3D, чертежи, отчеты). Демонстрация полного жизненного цикла продукта.</p>` 
         }
     },
-   proj2: {
-        img: "https://via.placeholder.com/700x300", // Tu pourras mettre le nom de ta vraie image ici plus tard (ex: "projet2.jpg")
+    proj2: {
+        img: "https://via.placeholder.com/700x300", 
         tags: ["CATIA", "Prototypage", "Ergonomie"],
         fr: { 
             title: "Conception d'un dispositif industriel", 
@@ -90,8 +90,8 @@ const translations = {
         skill_management: "Gestion",
         skill_management_desc: "Planification, Gestion de projet",
         projects_title: "Mes Projets",
-        proj1_title: "Optimisation de ligne",
-        proj1_short: "Réduction des temps de cycle de 15%.",
+        proj1_title: "Biodigesteur CSTR 1000L",
+        proj1_short: "Conception CAO et Simulation FEA.",
         proj2_title: "Dispositif industriel",
         proj2_short: "Modélisation 3D et prototypage ergonomique.",
         read_more: "Lire la suite →",
@@ -128,8 +128,8 @@ const translations = {
         skill_management: "Management",
         skill_management_desc: "Planning, Project Management",
         projects_title: "My Projects",
-        proj1_title: "Line Optimization",
-        proj1_short: "Reduced cycle times by 15%.",
+        proj1_title: "1000L CSTR Biodigester",
+        proj1_short: "CAD Design and FEA Simulation.",
         proj2_title: "Industrial Device",
         proj2_short: "3D modeling and ergonomic prototyping.",
         read_more: "Read more →",
@@ -140,7 +140,7 @@ const translations = {
         cat_code: "Programming",
         cat_erp: "Management & ERP",
         download_cv: "Download my CV",
-         exp_title: "Education & Experience",
+        exp_title: "Education & Experience",
         edu1_date: "Oct. 2024 - Jun. 2027 (Expected)",
         edu1_title: "Engineering Degree in Design and Manufacturing (ICP)",
         edu1_place: "FSTS, Hassan 1st University, Settat, Morocco",
@@ -166,8 +166,8 @@ const translations = {
         skill_management: "Управление",
         skill_management_desc: "Планирование, Управление проектами",
         projects_title: "Мои проекты",
-        proj1_title: "Оптимизация линии",
-        proj1_short: "Сокращение времени цикла на 15%.",
+        proj1_title: "Биореактор CSTR 1000L",
+        proj1_short: "3D-проектирование и FEA-моделирование.",
         proj2_title: "Промышленное устройство",
         proj2_short: "3D-моделирование и эргономичное прототипирование.",
         read_more: "Читать далее →",

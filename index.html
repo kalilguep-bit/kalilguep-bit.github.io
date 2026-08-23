@@ -13,8 +13,8 @@
         <!-- BARRE LATÉRALE (GAUCHE) -->
         <aside class="sidebar">
             <div class="profile-section">
-                <!-- Remplace 'photo.jpg' par le nom de ta vraie photo quand tu l'auras uploadée -->
-                <img src="kalilou_photo.jpeg" alt="Belem Abdoul Kalilou" class="profile-img">
+                <!-- L'attribut onclick a été ajouté ici pour ouvrir la photo en grand -->
+                <img src="kalilou_photo.jpeg" alt="Belem Abdoul Kalilou" class="profile-img" onclick="openImageModal('kalilou_photo.jpeg')" style="cursor: pointer;">
                 <h1 data-i18n="name">Belem Abdoul Kalilou</h1>
                 <p class="subtitle" data-i18n="role">Ingénieur en conception et productique</p>
                 
@@ -60,7 +60,7 @@
                         <h4 data-i18n="skill_management">Gestion</h4>
                         <p data-i18n="skill_management_desc">Planification, Gestion de projet</p>
                     </div>
-                </div
+                </div>
             </section>
 
             <section id="projects">
@@ -74,7 +74,7 @@
                             <h3 data-i18n="proj1_title">Optimisation de ligne</h3>
                             <p data-i18n="proj1_short">Réduction des temps de cycle de 15%.</p>
                             <span class="read-more" data-i18n="read_more">Lire la suite →</span>
-                        </div
+                        </div>
                     </div>
 
                     <!-- Projet 2 -->
@@ -92,7 +92,7 @@
         </main>
     </div>
 
-    <!-- FENÊTRE MODALE (Cachée par défaut) -->
+    <!-- FENÊTRE MODALE DES PROJETS (Cachée par défaut) -->
     <div id="projectModal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
@@ -103,11 +103,12 @@
         </div>
     </div>
 
+    <!-- FENÊTRE MODALE POUR LA PHOTO DE PROFIL -->
+    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+        <span class="close-image-modal">&times;</span>
+        <img class="image-modal-content" id="expandedImage">
+    </div>
+
     <script src="script.js"></script>
-       <!-- Fenêtre modale pour la photo de profil -->
-   <div id="imageModal" class="image-modal" onclick="closeImageModal()">
-       <span class="close-image-modal">&times;</span>
-       <img class="image-modal-content" id="expandedImage">
-   </div>
 </body>
 </html>

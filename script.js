@@ -58,10 +58,21 @@ const projectsData = {
                    <p>Коэффициенты безопасности соответствуют стандартам. Полный технический пакет (3D, чертежи, отчеты). Демонстрация полного жизненного цикла продукта.</p>` 
         }
     },
-    proj2: {
-        fr: { title: "Conception d'un dispositif industriel", desc: "Conception et prototypage d'un outil d'assemblage ergonomique. J'ai réalisé la modélisation 3D sur CATIA, effectué des simulations de contraintes, et supervisé l'impression 3D du prototype pour des tests en conditions réelles avec les opérateurs.", tags: ["CATIA", "Prototypage", "Ergonomie"] },
-        en: { title: "Industrial Device Design", desc: "Design and prototyping of an ergonomic assembly tool. I performed 3D modeling in CATIA, ran stress simulations, and supervised the 3D printing of the prototype for real-world testing with operators.", tags: ["CATIA", "Prototyping", "Ergonomics"] },
-        ru: { title: "Проектирование промышленного устройства", desc: "Проектирование и прототипирование эргономичного сборочного инструмента. Я выполнил 3D-моделирование в CATIA, провел симуляцию напряжений и контролировал 3D-печать прототипа для тестирования в реальных условиях с операторами.", tags: ["CATIA", "Прототипирование", "Эргономика"] }
+   proj2: {
+        img: "https://via.placeholder.com/700x300", // Tu pourras mettre le nom de ta vraie image ici plus tard (ex: "projet2.jpg")
+        tags: ["CATIA", "Prototypage", "Ergonomie"],
+        fr: { 
+            title: "Conception d'un dispositif industriel", 
+            desc: "Conception et prototypage d'un outil d'assemblage ergonomique. J'ai réalisé la modélisation 3D sur CATIA, effectué des simulations de contraintes, et supervisé l'impression 3D du prototype pour des tests en conditions réelles avec les opérateurs." 
+        },
+        en: { 
+            title: "Industrial Device Design", 
+            desc: "Design and prototyping of an ergonomic assembly tool. I performed 3D modeling in CATIA, ran stress simulations, and supervised the 3D printing of the prototype for real-world testing with operators." 
+        },
+        ru: { 
+            title: "Проектирование промышленного устройства", 
+            desc: "Проектирование и прототипирование эргономичного сборочного инструмента. Я выполнил 3D-моделирование в CATIA, провел симуляцию напряжений и контролировал 3D-печать прототипа для тестирования в реальных условиях с операторами." 
+        }
     }
 };
 

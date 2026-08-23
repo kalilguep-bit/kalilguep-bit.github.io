@@ -1,5 +1,4 @@
 // 1. DONNÉES DES PROJETS (Pour la fenêtre modale)
-// Tu pourras ajouter autant de projets que tu veux ici, avec leurs images et descriptions détaillées.
 const projectsData = {
     proj1: { 
         fr: { title: "Optimisation de ligne de production", desc: "Dans le cadre de mon projet de fin d'études, j'ai analysé une chaîne de montage existante. En appliquant les principes du Lean Manufacturing, j'ai réorganisé les postes de travail, ce qui a permis de réduire les temps de cycle de 15% et d'éliminer les goulots d'étranglement.", tags: ["Lean", "SolidWorks", "Analyse de données"] },
@@ -31,13 +30,13 @@ const translations = {
         proj1_short: "Réduction des temps de cycle de 15%.",
         proj2_title: "Dispositif industriel",
         proj2_short: "Modélisation 3D et prototypage ergonomique.",
-        read_more: "Lire la suite →"
+        read_more: "Lire la suite →",
         cat_cao: "CAO 3D",
-cat_sim: "Simulation & Automatisation",
-cat_robot: "Robotique & IoT",
-cat_data: "IA & Data",
-cat_code: "Programmation",
-cat_erp: "Gestion & ERP",
+        cat_sim: "Simulation & Automatisation",
+        cat_robot: "Robotique & IoT",
+        cat_data: "IA & Data",
+        cat_code: "Programmation",
+        cat_erp: "Gestion & ERP"
     },
     en: {
         name: "Belem Abdoul Kalilou",
@@ -55,13 +54,13 @@ cat_erp: "Gestion & ERP",
         proj1_short: "Reduced cycle times by 15%.",
         proj2_title: "Industrial Device",
         proj2_short: "3D modeling and ergonomic prototyping.",
-        read_more: "Read more →"
-    cat_cao: "3D CAD",
-cat_sim: "Simulation & Automation",
-cat_robot: "Robotics & IoT",
-cat_data: "AI & Data",
-cat_code: "Programming",
-cat_erp: "Management & ERP",
+        read_more: "Read more →",
+        cat_cao: "3D CAD",
+        cat_sim: "Simulation & Automation",
+        cat_robot: "Robotics & IoT",
+        cat_data: "AI & Data",
+        cat_code: "Programming",
+        cat_erp: "Management & ERP"
     },
     ru: {
         name: "Белем Абдул Калилу",
@@ -79,13 +78,13 @@ cat_erp: "Management & ERP",
         proj1_short: "Сокращение времени цикла на 15%.",
         proj2_title: "Промышленное устройство",
         proj2_short: "3D-моделирование и эргономичное прототипирование.",
-        read_more: "Читать далее →"
+        read_more: "Читать далее →",
         cat_cao: "3D САПР",
-cat_sim: "Моделирование и автоматизация",
-cat_robot: "Робототехника и IoT",
-cat_data: "ИИ и Данные",
-cat_code: "Программирование",
-cat_erp: "Управление и ERP",
+        cat_sim: "Моделирование и автоматизация",
+        cat_robot: "Робототехника и IoT",
+        cat_data: "ИИ и Данные",
+        cat_code: "Программирование",
+        cat_erp: "Управление и ERP"
     }
 };
 
@@ -93,7 +92,6 @@ cat_erp: "Управление и ERP",
 function setLanguage(lang) {
     localStorage.setItem('preferredLanguage', lang);
     
-    // Met à jour les textes simples
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
@@ -101,25 +99,20 @@ function setLanguage(lang) {
         }
     });
 
-    // Met à jour les boutons
     document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
     document.getElementById(`btn-${lang}`).classList.add('active');
     document.documentElement.lang = lang;
 }
 
-// 4. FONCTIONS POUR LA FENÊTRE MODALE
+// 4. FONCTIONS POUR LA FENÊTRE MODALE DES PROJETS
 function openModal(projectId) {
     const lang = localStorage.getItem('preferredLanguage') || 'fr';
     const project = projectsData[projectId][lang];
     
-    // Remplir la modale avec les données
     document.getElementById('modal-title').textContent = project.title;
     document.getElementById('modal-desc').textContent = project.desc;
-    
-    // Pour l'instant, on utilise une image placeholder. Tu pourras la changer dynamiquement plus tard.
     document.getElementById('modal-img').src = "https://via.placeholder.com/700x300"; 
     
-    // Générer les tags
     const tagsContainer = document.getElementById('modal-tags');
     tagsContainer.innerHTML = '';
     project.tags.forEach(tag => {
@@ -129,7 +122,6 @@ function openModal(projectId) {
         tagsContainer.appendChild(span);
     });
 
-    // Afficher la modale
     document.getElementById('projectModal').style.display = 'flex';
 }
 
@@ -137,7 +129,6 @@ function closeModal() {
     document.getElementById('projectModal').style.display = 'none';
 }
 
-// Fermer la modale si on clique en dehors du contenu
 window.onclick = function(event) {
     const modal = document.getElementById('projectModal');
     if (event.target == modal) {
@@ -150,6 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage') || 'fr';
     setLanguage(savedLang);
 });
+
 // --- FONCTIONS POUR LA MODALE DE LA PHOTO ---
 function openImageModal(imageSrc) {
     const modal = document.getElementById("imageModal");
@@ -162,12 +154,11 @@ function closeImageModal() {
     document.getElementById("imageModal").style.display = "none";
 }
 
-// Empêcher la fermeture quand on clique sur la photo elle-même
 document.addEventListener('DOMContentLoaded', function() {
     const modalImg = document.getElementById("expandedImage");
     if (modalImg) {
         modalImg.addEventListener('click', function(event) {
-            event.stopPropagation(); // Stoppe la propagation du clic
+            event.stopPropagation();
         });
     }
 });

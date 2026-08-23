@@ -345,3 +345,17 @@ h2 {
     border-radius: 4px;
     transition: width 1s ease-in-out;
 }
+/* Style spécial pour le bouton CV */
+.cv-btn {
+    background-color: var(--accent-color);
+    color: white;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 1rem;
+    border: none;
+}
+.cv-btn:hover {
+    background-color: #0b5ed7; /* Bleu un peu plus foncé au survol */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}

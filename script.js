@@ -1,9 +1,62 @@
 // 1. DONNÉES DES PROJETS (Pour la fenêtre modale)
 const projectsData = {
-    proj1: { 
-        fr: { title: "Optimisation de ligne de production", desc: "Dans le cadre de mon projet de fin d'études, j'ai analysé une chaîne de montage existante. En appliquant les principes du Lean Manufacturing, j'ai réorganisé les postes de travail, ce qui a permis de réduire les temps de cycle de 15% et d'éliminer les goulots d'étranglement.", tags: ["Lean", "SolidWorks", "Analyse de données"] },
-        en: { title: "Production Line Optimization", desc: "For my final year project, I analyzed an existing assembly line. By applying Lean Manufacturing principles, I reorganized workstations, which reduced cycle times by 15% and eliminated bottlenecks.", tags: ["Lean", "SolidWorks", "Data Analysis"] },
-        ru: { title: "Оптимизация производственной линии", desc: "В рамках моего дипломного проекта я проанализировал существующую сборочную линию. Применяя принципы бережливого производства, я реорганизовал рабочие места, что позволило сократить время цикла на 15% и устранить узкие места.", tags: ["Бережливое производство", "SolidWorks", "Анализ данных"] }
+        proj1: { 
+        img: "biodig_3d.jpg",
+        tags: ["SolidWorks", "FreeCAD", "FEA Simulation", "CSTR"],
+        fr: { 
+            title: "Biodigesteur CSTR 1000L", 
+            desc: `<p><strong>Contexte :</strong> Projet d'ingénierie à la FST Settat. Rôle : Concepteur Mécanique & Analyste FEA. Collaboration technique pour l'optimisation des plans.</p>
+                   <h4>1. Ingénierie Système</h4>
+                   <ul>
+                       <li><strong>CdCF :</strong> Fonctions principales (maintenir la température, homogénéité, étanchéité au biogaz).</li>
+                       <li><strong>CdCT :</strong> Volume utile 1000L, spécification des matériaux et motorisation.</li>
+                   </ul>
+                   <h4>2. Modélisation 3D (CAO)</h4>
+                   <p>Conception paramétrique sur <strong>SOLIDWORKS</strong> et <strong>FreeCAD</strong>. Optimisation itérative de la cuve et du système d'agitation pour maximiser le transfert thermique et éviter la sédimentation.</p>
+                   <h4>3. Validation Structurelle (FEA)</h4>
+                   <ul>
+                       <li><strong>Analyse de Flambement :</strong> Validation de la cuve (GRP) face aux pressions hydrostatiques.</li>
+                       <li><strong>Étude de Torsion :</strong> Analyse des contraintes de cisaillement sur l'arbre d'agitateur face à la viscosité du substrat.</li>
+                   </ul>
+                   <h4>4. Résultats</h4>
+                   <p>Coefficients de sécurité conformes aux normes. Dossier technique complet (3D, plans, rapports). Démonstration du cycle de vie complet du produit.</p>` 
+        },
+        en: { 
+            title: "1000L CSTR Biodigester", 
+            desc: `<p><strong>Context:</strong> Engineering project at FST Settat. Role: Mechanical Designer & FEA Analyst. Technical collaboration for plan optimization.</p>
+                   <h4>1. Systems Engineering</h4>
+                   <ul>
+                       <li><strong>Functional Specs:</strong> Main functions (temperature control, homogeneity, biogas tightness).</li>
+                       <li><strong>Technical Specs:</strong> 1000L useful volume, material and motorization specifications.</li>
+                   </ul>
+                   <h4>2. 3D Modeling (CAD)</h4>
+                   <p>Parametric design using <strong>SOLIDWORKS</strong> and <strong>FreeCAD</strong>. Iterative optimization of the tank and agitation system to maximize heat transfer and prevent sedimentation.</p>
+                   <h4>3. Structural Validation (FEA)</h4>
+                   <ul>
+                       <li><strong>Buckling Analysis:</strong> Validation of the tank (GRP) against hydrostatic pressures.</li>
+                       <li><strong>Torsion Study:</strong> Analysis of shear stresses on the agitator shaft against substrate viscosity.</li>
+                   </ul>
+                   <h4>4. Results</h4>
+                   <p>Safety factors compliant with standards. Complete technical dossier (3D, drawings, reports). Demonstration of the full product lifecycle.</p>` 
+        },
+        ru: { 
+            title: "Биореактор CSTR 1000L", 
+            desc: `<p><strong>Контекст:</strong> Инженерный проект в FST Settat. Роль: Конструктор-механик и инженер FEA. Техническое сотрудничество для оптимизации планов.</p>
+                   <h4>1. Системная инженерия</h4>
+                   <ul>
+                       <li><strong>Функциональные требования:</strong> Основные функции (контроль температуры, однородность, герметичность биогаза).</li>
+                       <li><strong>Технические требования:</strong> Полезный объем 1000 л, спецификация материалов и моторизации.</li>
+                   </ul>
+                   <h4>2. 3D-моделирование (САПР)</h4>
+                   <p>Параметрическое проектирование с использованием <strong>SOLIDWORKS</strong> и <strong>FreeCAD</strong>. Итеративная оптимизация резервуара и системы перемешивания для максимизации теплопередачи.</p>
+                   <h4>3. Структурная проверка (FEA)</h4>
+                   <ul>
+                       <li><strong>Анализ потери устойчивости:</strong> Проверка резервуара (GRP) на гидростатическое давление.</li>
+                       <li><strong>Исследование кручения:</strong> Анализ касательных напряжений на валу мешалки с учетом вязкости субстрата.</li>
+                   </ul>
+                   <h4>4. Результаты</h4>
+                   <p>Коэффициенты безопасности соответствуют стандартам. Полный технический пакет (3D, чертежи, отчеты). Демонстрация полного жизненного цикла продукта.</p>` 
+        }
     },
     proj2: {
         fr: { title: "Conception d'un dispositif industriel", desc: "Conception et prototypage d'un outil d'assemblage ergonomique. J'ai réalisé la modélisation 3D sur CATIA, effectué des simulations de contraintes, et supervisé l'impression 3D du prototype pour des tests en conditions réelles avec les opérateurs.", tags: ["CATIA", "Prototypage", "Ergonomie"] },
@@ -152,8 +205,8 @@ function openModal(projectId) {
     const project = projectsData[projectId][lang];
     
     document.getElementById('modal-title').textContent = project.title;
-    document.getElementById('modal-desc').textContent = project.desc;
-    document.getElementById('modal-img').src = "https://via.placeholder.com/700x300"; 
+    document.getElementById('modal-desc').innerHTML = project.desc;
+    document.getElementById('modal-img').src = project.img; 
     
     const tagsContainer = document.getElementById('modal-tags');
     tagsContainer.innerHTML = '';

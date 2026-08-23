@@ -359,3 +359,82 @@ h2 {
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
 }
+/* --- TIMELINE FORMATION & EXPÉRIENCE --- */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    margin-top: 2rem;
+}
+
+/* Ligne verticale */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+/* Point sur la ligne */
+.timeline-dot {
+    position: absolute;
+    left: -30px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    border: 3px solid var(--bg-color);
+    z-index: 1;
+}
+
+.timeline-content {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-content:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-color: var(--accent-color);
+}
+
+.timeline-date {
+    display: inline-block;
+    background: var(--bg-color);
+    color: var(--accent-color);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: var(--text-color);
+}
+
+.timeline-place {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.timeline-content p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}

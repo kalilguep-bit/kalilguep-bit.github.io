@@ -438,3 +438,33 @@ h2 {
     color: var(--text-color);
     line-height: 1.5;
 }
+/* --- STYLE POUR LE TEXTE DÉTAILLÉ DANS LA MODALE --- */
+.modal-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.modal-desc h4 {
+    color: var(--accent-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 10px;
+}
+
+.modal-desc ul {
+    padding-left: 20px;
+    margin-bottom: 1rem;
+}
+
+.modal-desc li {
+    margin-bottom: 0.5rem;
+}
+
+.modal-desc strong {
+    font-weight: 700;
+    color: var(--text-color);
+}

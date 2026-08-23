@@ -37,7 +37,20 @@ const translations = {
         cat_data: "IA & Data",
         cat_code: "Programmation",
         cat_erp: "Gestion & ERP",
-        download_cv: "Télécharger mon CV"
+        download_cv: "Télécharger mon CV",
+        exp_title: "Formation & Expérience",
+        edu1_date: "Oct. 2024 - Juin 2027 (Prévu)",
+        edu1_title: "Cycle d'Ingénieur en Conception et Productique (ICP)",
+        edu1_place: "FSTS, Université Hassan 1er, Settat, Maroc",
+        edu1_desc: "Admis sur concours. Formation d'excellence axée sur la conception mécanique avancée, l'automatisation industrielle, la robotique et l'optimisation des systèmes de production.",
+        edu2_date: "Sept. 2022 - Juin 2024",
+        edu2_title: "DEUST en MIPC (Mathématiques, Informatique, Physique, Chimie)",
+        edu2_place: "FST Marrakech, Université Cadi Ayyad, Maroc",
+        edu2_desc: "Acquisition de bases scientifiques et techniques solides, avec une introduction à la programmation, la modélisation et la résolution de problèmes complexes.",
+        edu3_date: "2022",
+        edu3_title: "Baccalauréat",
+        edu3_place: "Lycée, Maroc",
+        edu3_desc: "Obtention du diplôme avec la mention Bien."
     },
     en: {
         name: "Belem Abdoul Kalilou",
@@ -62,7 +75,20 @@ const translations = {
         cat_data: "AI & Data",
         cat_code: "Programming",
         cat_erp: "Management & ERP",
-        download_cv: "Download my CV"
+        download_cv: "Download my CV",
+         exp_title: "Education & Experience",
+        edu1_date: "Oct. 2024 - Jun. 2027 (Expected)",
+        edu1_title: "Engineering Degree in Design and Manufacturing (ICP)",
+        edu1_place: "FSTS, Hassan 1st University, Settat, Morocco",
+        edu1_desc: "Admitted via competitive exam. Excellent training focused on advanced mechanical design, industrial automation, robotics, and production system optimization.",
+        edu2_date: "Sep. 2022 - Jun. 2024",
+        edu2_title: "DEUST in MIPC (Mathematics, Computer Science, Physics, Chemistry)",
+        edu2_place: "FST Marrakech, Cadi Ayyad University, Morocco",
+        edu2_desc: "Acquisition of strong scientific and technical foundations, with an introduction to programming, modeling, and complex problem-solving.",
+        edu3_date: "2022",
+        edu3_title: "High School Diploma (Baccalauréat)",
+        edu3_place: "High School, Morocco",
+        edu3_desc: "Obtained the diploma with Honors (Mention Bien)."
     },
     ru: {
         name: "Белем Абдул Калилу",
@@ -87,7 +113,20 @@ const translations = {
         cat_data: "ИИ и Данные",
         cat_code: "Программирование",
         cat_erp: "Управление и ERP",
-        download_cv: "Скачать мое резюме"
+        download_cv: "Скачать мое резюме",
+        exp_title: "Образование и Опыт",
+        edu1_date: "Окт. 2024 - Июн. 2027 (Ожидается)",
+        edu1_title: "Диплом инженера по проектированию и производству (ICP)",
+        edu1_place: "FSTS, Университет Хассана I, Сеттат, Марокко",
+        edu1_desc: "Поступление по результатам конкурсного экзамена. Отличная подготовка, ориентированная на передовое механическое проектирование, промышленную автоматизацию, робототехнику и оптимизацию производственных систем.",
+        edu2_date: "Сен. 2022 - Июн. 2024",
+        edu2_title: "DEUST по направлению MIPC (Математика, Информатика, Физика, Химия)",
+        edu2_place: "FST Марракеш, Университет Кади Айяд, Марокко",
+        edu2_desc: "Получение прочных научных и технических основ, включая знакомство с программированием, моделированием и решением сложных задач.",
+        edu3_date: "2022",
+        edu3_title: "Диплом о среднем образовании (Бакалавриат)",
+        edu3_place: "Лицей, Марокко",
+        edu3_desc: "Получение диплома с отличием (Mention Bien)."
     }
 };
 

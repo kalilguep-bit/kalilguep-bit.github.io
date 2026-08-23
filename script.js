@@ -32,6 +32,12 @@ const translations = {
         proj2_title: "Dispositif industriel",
         proj2_short: "Modélisation 3D et prototypage ergonomique.",
         read_more: "Lire la suite →"
+        cat_cao: "CAO 3D",
+cat_sim: "Simulation & Automatisation",
+cat_robot: "Robotique & IoT",
+cat_data: "IA & Data",
+cat_code: "Programmation",
+cat_erp: "Gestion & ERP",
     },
     en: {
         name: "Belem Abdoul Kalilou",
@@ -50,6 +56,12 @@ const translations = {
         proj2_title: "Industrial Device",
         proj2_short: "3D modeling and ergonomic prototyping.",
         read_more: "Read more →"
+    cat_cao: "3D CAD",
+cat_sim: "Simulation & Automation",
+cat_robot: "Robotics & IoT",
+cat_data: "AI & Data",
+cat_code: "Programming",
+cat_erp: "Management & ERP",
     },
     ru: {
         name: "Белем Абдул Калилу",
@@ -68,6 +80,12 @@ const translations = {
         proj2_title: "Промышленное устройство",
         proj2_short: "3D-моделирование и эргономичное прототипирование.",
         read_more: "Читать далее →"
+        cat_cao: "3D САПР",
+cat_sim: "Моделирование и автоматизация",
+cat_robot: "Робототехника и IoT",
+cat_data: "ИИ и Данные",
+cat_code: "Программирование",
+cat_erp: "Управление и ERP",
     }
 };
 

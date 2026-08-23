@@ -213,15 +213,22 @@ function setLanguage(lang) {
 // 4. FONCTIONS POUR LA FENÊTRE MODALE DES PROJETS
 function openModal(projectId) {
     const lang = localStorage.getItem('preferredLanguage') || 'fr';
-    const project = projectsData[projectId][lang];
     
+    // On récupère d'abord l'objet complet du projet
+    const projectData = projectsData[projectId];
+    // Ensuite on récupère la partie correspondant à la langue choisie
+    const project = projectData[lang];
+    
+    // On affiche le titre et la description (qui sont dans la partie langue)
     document.getElementById('modal-title').textContent = project.title;
     document.getElementById('modal-desc').innerHTML = project.desc;
-    document.getElementById('modal-img').src = project.img; 
+    
+    // On affiche l'image et les tags (qui sont à la racine du projet, pas dans la langue)
+    document.getElementById('modal-img').src = projectData.img; 
     
     const tagsContainer = document.getElementById('modal-tags');
     tagsContainer.innerHTML = '';
-    project.tags.forEach(tag => {
+    projectData.tags.forEach(tag => {
         const span = document.createElement('span');
         span.className = 'tag';
         span.textContent = tag;

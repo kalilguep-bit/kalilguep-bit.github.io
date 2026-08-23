@@ -1,7 +1,7 @@
 // 1. DONNÉES DES PROJETS (Pour la fenêtre modale)
 // Tu pourras ajouter autant de projets que tu veux ici, avec leurs images et descriptions détaillées.
 const projectsData = {
-    proj1: {
+    proj1: { 
         fr: { title: "Optimisation de ligne de production", desc: "Dans le cadre de mon projet de fin d'études, j'ai analysé une chaîne de montage existante. En appliquant les principes du Lean Manufacturing, j'ai réorganisé les postes de travail, ce qui a permis de réduire les temps de cycle de 15% et d'éliminer les goulots d'étranglement.", tags: ["Lean", "SolidWorks", "Analyse de données"] },
         en: { title: "Production Line Optimization", desc: "For my final year project, I analyzed an existing assembly line. By applying Lean Manufacturing principles, I reorganized workstations, which reduced cycle times by 15% and eliminated bottlenecks.", tags: ["Lean", "SolidWorks", "Data Analysis"] },
         ru: { title: "Оптимизация производственной линии", desc: "В рамках моего дипломного проекта я проанализировал существующую сборочную линию. Применяя принципы бережливого производства, я реорганизовал рабочие места, что позволило сократить время цикла на 15% и устранить узкие места.", tags: ["Бережливое производство", "SolidWorks", "Анализ данных"] }

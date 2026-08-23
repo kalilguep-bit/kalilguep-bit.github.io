@@ -36,7 +36,8 @@ const translations = {
         cat_robot: "Robotique & IoT",
         cat_data: "IA & Data",
         cat_code: "Programmation",
-        cat_erp: "Gestion & ERP"
+        cat_erp: "Gestion & ERP",
+        download_cv: "Télécharger mon CV"
     },
     en: {
         name: "Belem Abdoul Kalilou",
@@ -60,7 +61,8 @@ const translations = {
         cat_robot: "Robotics & IoT",
         cat_data: "AI & Data",
         cat_code: "Programming",
-        cat_erp: "Management & ERP"
+        cat_erp: "Management & ERP",
+        download_cv: "Download my CV"
     },
     ru: {
         name: "Белем Абдул Калилу",
@@ -84,7 +86,8 @@ const translations = {
         cat_robot: "Робототехника и IoT",
         cat_data: "ИИ и Данные",
         cat_code: "Программирование",
-        cat_erp: "Управление и ERP"
+        cat_erp: "Управление и ERP",
+        download_cv: "Скачать мое резюме"
     }
 };
 

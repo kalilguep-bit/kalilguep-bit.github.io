@@ -132,3 +132,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage') || 'fr';
     setLanguage(savedLang);
 });
+// --- FONCTIONS POUR LA MODALE DE LA PHOTO ---
+function openImageModal(imageSrc) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("expandedImage");
+    modal.style.display = "flex";
+    modalImg.src = imageSrc;
+}
+
+function closeImageModal() {
+    document.getElementById("imageModal").style.display = "none";
+}

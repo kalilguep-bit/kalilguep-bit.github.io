@@ -109,7 +109,7 @@ const projectsData = {
                    <h4>4. Результаты</h4>
                    <p>Валидация модели посредством симуляции точных движений. Демонстрация полного цикла: САПР → Симуляция → Управление.</p>` 
         }
-    }
+    },
     proj3: {
         img: "iot_powerbi.jpg",
         tags: ["IoT Industriel", "ESP32", "Raspberry Pi", "MQTT", "Node-RED", "PostgreSQL", "Power BI", "Maintenance Prédictive"],
@@ -286,8 +286,8 @@ const translations = {
         skill_management_desc: "Планирование, Управление проектами",
         projects_title: "Мои проекты",
         proj1_title: "Биореактор CSTR 1000L",
+        proj1_short: "3D-проектирование и FEA-моделирование.",
         proj2_title: "Робот SCARA - Кинематическое управление",
-        proj2_short: "3D-моделирование, Simscape и управление траjectoire.",
         proj2_short: "3D-моделирование и эргономичное прототипирование.",
         proj3_title: "Предиктивное обслуживание IoT и ИИ",
         proj3_short: "Промышленный вибромониторинг (ESP32, MQTT, Power BI).",

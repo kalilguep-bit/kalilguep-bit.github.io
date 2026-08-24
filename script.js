@@ -58,20 +58,56 @@ const projectsData = {
                    <p>Коэффициенты безопасности соответствуют стандартам. Полный технический пакет (3D, чертежи, отчеты). Демонстрация полного жизненного цикла продукта.</p>` 
         }
     },
-    proj2: {
-        img: "https://via.placeholder.com/700x300", 
-        tags: ["CATIA", "Prototypage", "Ergonomie"],
+        proj2: {
+        img: "scara_robot.jpg",
+        tags: ["SolidWorks", "MATLAB", "Simulink", "Simscape Multibody", "Robotique"],
         fr: { 
-            title: "Conception d'un dispositif industriel", 
-            desc: "Conception et prototypage d'un outil d'assemblage ergonomique. J'ai réalisé la modélisation 3D sur CATIA, effectué des simulations de contraintes, et supervisé l'impression 3D du prototype pour des tests en conditions réelles avec les opérateurs." 
+            title: "Robot SCARA - Contrôle Cinématique", 
+            desc: `<p><strong>Contexte :</strong> Projet de robotique avancé combinant conception mécanique, simulation physique et contrôle de trajectoire.</p>
+                   <h4>1. Conception Mécanique (CAO)</h4>
+                   <p>Modélisation 3D complète d'un robot SCARA sur <strong>SOLIDWORKS</strong>. Dimensionnement précis des corps rigides (Base, C1, C2, C3) et définition des paramètres cinématiques.</p>
+                   <h4>2. Simulation Multibody (Simscape)</h4>
+                   <p>Export CAD-vers-MATLAB via <strong>Simscape Multibody Link</strong>. Génération automatique du modèle physique avec les corps rigides, les liaisons et configuration des repères de référence.</p>
+                   <h4>3. Programmation et Contrôle (Simulink)</h4>
+                   <ul>
+                       <li><strong>Cinématique Directe (FK) :</strong> Calcul de la position de l'effecteur à partir des angles des joints.</li>
+                       <li><strong>Cinématique Inverse (IK) :</strong> Calcul des angles nécessaires pour atteindre une position cible.</li>
+                       <li><strong>Trajectoires :</strong> Création de mouvements complexes via Signal Editor et analyse avec Scope.</li>
+                   </ul>
+                   <h4>4. Résultats</h4>
+                   <p>Validation du modèle par simulation de mouvements précis. Démonstration de la maîtrise du cycle complet : CAO → Simulation → Contrôle.</p>` 
         },
         en: { 
-            title: "Industrial Device Design", 
-            desc: "Design and prototyping of an ergonomic assembly tool. I performed 3D modeling in CATIA, ran stress simulations, and supervised the 3D printing of the prototype for real-world testing with operators." 
+            title: "SCARA Robot - Kinematic Control", 
+            desc: `<p><strong>Context:</strong> Advanced robotics project combining mechanical design, physical simulation, and trajectory control.</p>
+                   <h4>1. Mechanical Design (CAD)</h4>
+                   <p>Complete 3D modeling of a SCARA robot in <strong>SOLIDWORKS</strong>. Precise dimensioning of rigid bodies (Base, C1, C2, C3) and definition of kinematic parameters.</p>
+                   <h4>2. Multibody Simulation (Simscape)</h4>
+                   <p>CAD-to-MATLAB export via <strong>Simscape Multibody Link</strong>. Automatic generation of the physical model with rigid bodies, joints, and configuration of reference frames.</p>
+                   <h4>3. Programming and Control (Simulink)</h4>
+                   <ul>
+                       <li><strong>Forward Kinematics (FK):</strong> Calculating end-effector position from joint angles.</li>
+                       <li><strong>Inverse Kinematics (IK):</strong> Calculating required joint angles to reach a target position.</li>
+                       <li><strong>Trajectories:</strong> Creating complex movements via Signal Editor and analysis with Scope.</li>
+                   </ul>
+                   <h4>4. Results</h4>
+                   <p>Model validation through precise movement simulation. Demonstration of full lifecycle mastery: CAD → Simulation → Control.</p>` 
         },
         ru: { 
-            title: "Проектирование промышленного устройства", 
-            desc: "Проектирование и прототипирование эргономичного сборочного инструмента. Я выполнил 3D-моделирование в CATIA, провел симуляцию напряжений и контролировал 3D-печать прототипа для тестирования в реальных условиях с операторами." 
+            title: "Робот SCARA - Кинематическое управление", 
+            desc: `<p><strong>Контекст:</strong> Продвинутый проект по робототехнике, сочетающий механическое проектирование, физическое моделирование и управление траекторией.</p>
+                   <h4>1. Механическое проектирование (САПР)</h4>
+                   <p>Полное 3D-моделирование робота SCARA в <strong>SOLIDWORKS</strong>. Точное определение размеров твердых тел (Base, C1, C2, C3) и кинематических параметров.</p>
+                   <h4>2. Мультителевая симуляция (Simscape)</h4>
+                   <p>Экспорт из САПР в MATLAB через <strong>Simscape Multibody Link</strong>. Автоматическая генерация физической модели с твердыми телами, сочленениями и настройкой опорных систем координат.</p>
+                   <h4>3. Программирование и управление (Simulink)</h4>
+                   <ul>
+                       <li><strong>Прямая кинематика (PK):</strong> Вычисление положения схвата по углам сочленений.</li>
+                       <li><strong>Обратная кинематика (OK):</strong> Вычисление необходимых углов для достижения целевой позиции.</li>
+                       <li><strong>Траектории:</strong> Создание сложных движений через Signal Editor и анализ с помощью Scope.</li>
+                   </ul>
+                   <h4>4. Результаты</h4>
+                   <p>Валидация модели посредством симуляции точных движений. Демонстрация полного цикла: САПР → Симуляция → Управление.</p>` 
         }
     }
 };

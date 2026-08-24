@@ -110,9 +110,9 @@ const projectsData = {
                    <p>Валидация модели посредством симуляции точных движений. Демонстрация полного цикла: САПР → Симуляция → Управление.</p>` 
         }
     },
-    proj3: {
-        img: "iot_powerbi.jpg",
-        tags: ["IoT Industriel", "ESP32", "Raspberry Pi", "MQTT", "Node-RED", "PostgreSQL", "Power BI", "Maintenance Prédictive"],
+        proj3: {
+        img: "iot_powerbi.jpg", // Image principale de la carte
+        tags: ["IoT Industriel", "ESP32", "Raspberry Pi", "MQTT", "Node-RED", "PostgreSQL", "Power BI"],
         fr: { 
             title: "Maintenance Prédictive IoT & IA - Surveillance Vibratoire", 
             desc: `<p><strong>Contexte :</strong> Architecture IoT industrielle complète pour la maintenance prédictive d'équipements rotatifs. Interception des défaillances mécaniques avant panne via l'analyse des signatures vibratoires.</p>
@@ -127,16 +127,17 @@ const projectsData = {
                        <li><strong>Orchestration Node-RED :</strong> Filtrage, routage et dashboard temps réel des amplitudes vibratoires.</li>
                        <li><strong>Double persistance :</strong> Archivage CSV haute vitesse + Base PostgreSQL pour requêtes complexes.</li>
                    </ul>
-                   <h4>3. Business Intelligence (Power BI)</h4>
-                   <p>Connexion directe Power BI → PostgreSQL avec requêtes SQL d'agrégation (moyennes glissantes). Tableaux de bord dynamiques affichant les spectres d'accélération, alertes de seuil et tendances d'usure.</p>
-                   <h4>4. Diagnostic Technique</h4>
-                   <ul>
-                       <li><strong>Axe X ≈ 3g :</strong> Vibrations horizontales (balourd potentiel)</li>
-                       <li><strong>Axe Y ≈ -0.87g :</strong> Inclinaison statique du capteur</li>
-                       <li><strong>Axe Z ≈ 9.5g :</strong> Gravité + vibrations verticales</li>
-                   </ul>
+                   <h4>3. Business Intelligence & Diagnostic</h4>
+                   <p>Connexion directe Power BI → PostgreSQL avec requêtes SQL d'agrégation. Analyse des courbes : Axe X ≈ 3g (balourd), Axe Y ≈ -0.87g (inclinaison), Axe Z ≈ 9.5g (gravité + vibrations).</p>
+                   <h4>4. Galerie du Projet</h4>
+                   <div class="modal-image-grid">
+                       <img src="iot_montage.jpg" alt="Montage ESP32 et MPU6050">
+                       <img src="iot_nodered.jpg" alt="Interface Node-RED">
+                       <img src="iot_postgresql.jpg" alt="Base de données pgAdmin">
+                       <img src="iot_powerbi.jpg" alt="Dashboard Power BI">
+                   </div>
                    <h4>5. Impact Industriel</h4>
-                   <p>Passage de la maintenance préventive à la maintenance conditionnelle. Réduction des arrêts de production et solution extensible (ajout capteurs température, courant). Données structurées pour futurs modèles ML/IA.</p>` 
+                   <p>Passage de la maintenance préventive à la maintenance conditionnelle. Réduction des arrêts de production et solution extensible.</p>` 
         },
         en: { 
             title: "IoT & AI Predictive Maintenance - Vibration Monitoring", 
@@ -152,16 +153,17 @@ const projectsData = {
                        <li><strong>Node-RED Orchestration:</strong> Filtering, routing and real-time dashboard of vibration amplitudes.</li>
                        <li><strong>Dual persistence:</strong> High-speed CSV archiving + PostgreSQL database for complex queries.</li>
                    </ul>
-                   <h4>3. Business Intelligence (Power BI)</h4>
-                   <p>Direct Power BI → PostgreSQL connection with SQL aggregation queries (moving averages). Dynamic dashboards displaying acceleration spectra, threshold alerts and wear trends.</p>
-                   <h4>4. Technical Diagnosis</h4>
-                   <ul>
-                       <li><strong>X Axis ≈ 3g:</strong> Horizontal vibrations (potential unbalance)</li>
-                       <li><strong>Y Axis ≈ -0.87g:</strong> Static sensor inclination</li>
-                       <li><strong>Z Axis ≈ 9.5g:</strong> Gravity + vertical vibrations</li>
-                   </ul>
+                   <h4>3. Business Intelligence & Diagnosis</h4>
+                   <p>Direct Power BI → PostgreSQL connection with SQL aggregation queries. Curve analysis: X Axis ≈ 3g (unbalance), Y Axis ≈ -0.87g (inclination), Z Axis ≈ 9.5g (gravity + vibrations).</p>
+                   <h4>4. Project Gallery</h4>
+                   <div class="modal-image-grid">
+                       <img src="iot_montage.jpg" alt="ESP32 and MPU6050 Setup">
+                       <img src="iot_nodered.jpg" alt="Node-RED Interface">
+                       <img src="iot_postgresql.jpg" alt="pgAdmin Database">
+                       <img src="iot_powerbi.jpg" alt="Power BI Dashboard">
+                   </div>
                    <h4>5. Industrial Impact</h4>
-                   <p>Transition from preventive to condition-based maintenance. Reduced production downtime and scalable solution (adding temperature, current sensors). Structured data for future ML/AI models.</p>` 
+                   <p>Transition from preventive to condition-based maintenance. Reduced production downtime and scalable solution.</p>` 
         },
         ru: { 
             title: "Предиктивное обслуживание IoT и ИИ - Вибромониторинг", 
@@ -177,16 +179,17 @@ const projectsData = {
                        <li><strong>Оркестрация Node-RED:</strong> Фильтрация, маршрутизация и панель мониторинга амплитуд вибрации в реальном времени.</li>
                        <li><strong>Двойное сохранение:</strong> Высокоскоростное архивирование CSV + база данных PostgreSQL для сложных запросов.</li>
                    </ul>
-                   <h4>3. Бизнес-аналитика (Power BI)</h4>
-                   <p>Прямое подключение Power BI → PostgreSQL с SQL-запросами агрегации (скользящие средние). Динамические панели отображения спектров ускорения, предупреждений о порогах и тенденций износа.</p>
-                   <h4>4. Техническая диагностика</h4>
-                   <ul>
-                       <li><strong>Ось X ≈ 3g:</strong> Горизонтальные вибрации (возможный дисбаланс)</li>
-                       <li><strong>Ось Y ≈ -0.87g:</strong> Статический наклон датчика</li>
-                       <li><strong>Ось Z ≈ 9.5g:</strong> Гравитация + вертикальные вибрации</li>
-                   </ul>
+                   <h4>3. Бизнес-аналитика и Диагностика</h4>
+                   <p>Прямое подключение Power BI → PostgreSQL с SQL-запросами агрегации. Анализ кривых: Ось X ≈ 3g (дисбаланс), Ось Y ≈ -0.87g (наклон), Ось Z ≈ 9.5g (гравитация + вибрации).</p>
+                   <h4>4. Галерея проекта</h4>
+                   <div class="modal-image-grid">
+                       <img src="iot_montage.jpg" alt="Установка ESP32 и MPU6050">
+                       <img src="iot_nodered.jpg" alt="Интерфейс Node-RED">
+                       <img src="iot_postgresql.jpg" alt="База данных pgAdmin">
+                       <img src="iot_powerbi.jpg" alt="Панель управления Power BI">
+                   </div>
                    <h4>5. Промышленное воздействие</h4>
-                   <p>Переход от профилактического обслуживания к обслуживанию по состоянию. Сокращение простоев производства и масштабируемое решение (добавление датчиков температуры, тока). Структурированные данные для будущих моделей ML/ИИ.</p>` 
+                   <p>Переход от профилактического обслуживания к обслуживанию по состоянию. Сокращение простоев производства и масштабируемое решение.</p>` 
         }
     }
 };

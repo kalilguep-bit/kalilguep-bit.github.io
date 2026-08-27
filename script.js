@@ -58,7 +58,7 @@ const projectsData = {
                    <p>Коэффициенты безопасности соответствуют стандартам. Полный технический пакет (3D, чертежи, отчеты). Демонстрация полного жизненного цикла продукта.</p>` 
         }
     },
-        proj2: {
+    proj2: {
         img: "scara_robot.jpg",
         tags: ["SolidWorks", "MATLAB", "Simulink", "Simscape Multibody", "Robotique"],
         fr: { 
@@ -110,8 +110,8 @@ const projectsData = {
                    <p>Валидация модели посредством симуляции точных движений. Демонстрация полного цикла: САПР → Симуляция → Управление.</p>` 
         }
     },
-        proj3: {
-        img: "iot_powerbi.jpg", // Image principale de la carte
+    proj3: {
+        img: "iot_powerbi.jpg",
         tags: ["IoT Industriel", "ESP32", "Raspberry Pi", "MQTT", "Node-RED", "PostgreSQL", "Power BI"],
         fr: { 
             title: "Maintenance Prédictive IoT & IA - Surveillance Vibratoire", 
@@ -192,7 +192,6 @@ const projectsData = {
                    <p>Переход от профилактического обслуживания к обслуживанию по состоянию. Сокращение простоев производства и масштабируемое решение.</p>` 
         }
     },
-
     proj4: {
         img: "gazebo_maison.png",
         tags: ["ROS 2", "Python", "OpenCV", "SLAM", "Nav2", "Docker", "Gazebo"],
@@ -275,7 +274,6 @@ const projectsData = {
                    </div>` 
         }
     }
-};
 };
 
 // 2. TRADUCTIONS GÉNÉRALES DE LA PAGE
@@ -379,7 +377,7 @@ const translations = {
         proj1_title: "Биореактор CSTR 1000L",
         proj1_short: "3D-проектирование и FEA-моделирование.",
         proj2_title: "Робот SCARA - Кинематическое управление",
-        proj2_short: "3D-моделирование и эргономичное прототипирование.",
+        proj2_short: "3D-моделирование, Simscape и управление траекторией.",
         proj3_title: "Предиктивное обслуживание IoT и ИИ",
         proj3_short: "Промышленный вибромониторинг (ESP32, MQTT, Power BI).",
         proj4_title: "Автономный поисково-спасательный ровер (SAR)",
@@ -428,16 +426,11 @@ function setLanguage(lang) {
 function openModal(projectId) {
     const lang = localStorage.getItem('preferredLanguage') || 'fr';
     
-    // On récupère d'abord l'objet complet du projet
     const projectData = projectsData[projectId];
-    // Ensuite on récupère la partie correspondant à la langue choisie
     const project = projectData[lang];
     
-    // On affiche le titre et la description (qui sont dans la partie langue)
     document.getElementById('modal-title').textContent = project.title;
     document.getElementById('modal-desc').innerHTML = project.desc;
-    
-    // On affiche l'image et les tags (qui sont à la racine du projet, pas dans la langue)
     document.getElementById('modal-img').src = projectData.img; 
     
     const tagsContainer = document.getElementById('modal-tags');

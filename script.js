@@ -191,7 +191,91 @@ const projectsData = {
                    <h4>5. Промышленное воздействие</h4>
                    <p>Переход от профилактического обслуживания к обслуживанию по состоянию. Сокращение простоев производства и масштабируемое решение.</p>` 
         }
+    },
+
+    proj4: {
+        img: "gazebo_maison.png",
+        tags: ["ROS 2", "Python", "OpenCV", "SLAM", "Nav2", "Docker", "Gazebo"],
+        fr: { 
+            title: "Rover Autonome de Sauvetage (SAR)", 
+            desc: `<p><strong>Contexte :</strong> Système robotique autonome complet pour missions de recherche et sauvetage en environnement inconnu. Maîtrise de la chaîne : Simulation → Perception → Navigation.</p>
+                   <h4>1. Simulation & Intégration</h4>
+                   <ul>
+                       <li><strong>Stack :</strong> ROS 2 Humble, Gazebo 11, TurtleBot3 Waffle Pi, Docker (Ubuntu 22.04).</li>
+                       <li><strong>Défis :</strong> Résolution des problèmes d'affichage graphique cross-platform (X11 Forwarding).</li>
+                   </ul>
+                   <h4>2. Cartographie Autonome (SLAM)</h4>
+                   <p>Déploiement de <strong>SLAM Toolbox</strong> (Cartographer). Synchronisation LiDAR/Odométrie pour une carte 2D haute résolution avec une précision de localisation de <strong>±5 cm</strong>.</p>
+                   <h4>3. Vision par Ordinateur</h4>
+                   <p>Nœud Python personnalisé avec <strong>OpenCV 4</strong>. Détection de cibles en temps réel (10-15 FPS) via l'espace colorimétrique HSV pour une robustesse aux variations lumineuses.</p>
+                   <h4>4. Navigation Autonome (Nav2)</h4>
+                   <ul>
+                       <li><strong>Planification :</strong> Algorithme A* (global) + DWB (évitement local).</li>
+                       <li><strong>Mission :</strong> Script Python orchestrant le déplacement vers des coordonnées cibles avec gestion des erreurs et recalibrage AMCL.</li>
+                       <li><strong>Performance :</strong> Mission réussie en 83s, taux de succès de 100%, latence totale < 200ms.</li>
+                   </ul>
+                   <h4>5. Galerie du Projet</h4>
+                   <div class="modal-image-grid">
+                       <img src="gazebo_maison.png" alt="Simulation Gazebo">
+                       <img src="slam_map_complete.png" alt="Cartographie SLAM dans RViz">
+                       <img src="victim_detection_view.png" alt="Détection OpenCV">
+                       <img src="mission_log.png" alt="Logs de mission autonome ROS 2">
+                   </div>` 
+        },
+        en: { 
+            title: "Autonomous Search & Rescue (SAR) Rover", 
+            desc: `<p><strong>Context:</strong> Complete autonomous robotic system for search and rescue missions in unknown environments. Mastering the chain: Simulation → Perception → Navigation.</p>
+                   <h4>1. Simulation & Integration</h4>
+                   <ul>
+                       <li><strong>Stack:</strong> ROS 2 Humble, Gazebo 11, TurtleBot3 Waffle Pi, Docker (Ubuntu 22.04).</li>
+                       <li><strong>Challenges:</strong> Resolving cross-platform graphical display issues (X11 Forwarding).</li>
+                   </ul>
+                   <h4>2. Autonomous Mapping (SLAM)</h4>
+                   <p>Deployment of <strong>SLAM Toolbox</strong> (Cartographer). LiDAR/Odometry synchronization for a high-resolution 2D map with <strong>±5 cm</strong> localization accuracy.</p>
+                   <h4>3. Computer Vision</h4>
+                   <p>Custom Python node with <strong>OpenCV 4</strong>. Real-time target detection (10-15 FPS) using HSV color space for robustness against lighting variations.</p>
+                   <h4>4. Autonomous Navigation (Nav2)</h4>
+                   <ul>
+                       <li><strong>Planning:</strong> A* algorithm (global) + DWB (local obstacle avoidance).</li>
+                       <li><strong>Mission:</strong> Python script orchestrating movement to target coordinates with error handling and AMCL recalibration.</li>
+                       <li><strong>Performance:</strong> Mission completed in 83s, 100% success rate, total latency < 200ms.</li>
+                   </ul>
+                   <h4>5. Project Gallery</h4>
+                   <div class="modal-image-grid">
+                       <img src="gazebo_maison.png" alt="Gazebo Simulation">
+                       <img src="slam_map_complete.png" alt="SLAM Mapping in RViz">
+                       <img src="victim_detection_view.png" alt="OpenCV Detection">
+                       <img src="mission_log.png" alt="ROS 2 Autonomous Mission Logs">
+                   </div>` 
+        },
+        ru: { 
+            title: "Автономный поисково-спасательный ровер (SAR)", 
+            desc: `<p><strong>Контекст:</strong> Полная автономная робототехническая система для поисково-спасательных миссий в неизвестной среде. Освоение цепочки: Симуляция → Восприятие → Навигация.</p>
+                   <h4>1. Симуляция и Интеграция</h4>
+                   <ul>
+                       <li><strong>Стек:</strong> ROS 2 Humble, Gazebo 11, TurtleBot3 Waffle Pi, Docker (Ubuntu 22.04).</li>
+                       <li><strong>Вызовы:</strong> Решение проблем кросс-платформенного графического отображения (X11 Forwarding).</li>
+                   </ul>
+                   <h4>2. Автономное картографирование (SLAM)</h4>
+                   <p>Развертывание <strong>SLAM Toolbox</strong> (Cartographer). Синхронизация LiDAR/одометрии для создания 2D-карты высокого разрешения с точностью локализации <strong>±5 см</strong>.</p>
+                   <h4>3. Компьютерное зрение</h4>
+                   <p>Пользовательский узел Python с <strong>OpenCV 4</strong>. Обнаружение целей в реальном времени (10-15 кадров в секунду) с использованием цветового пространства HSV.</p>
+                   <h4>4. Автономная навигация (Nav2)</h4>
+                   <ul>
+                       <li><strong>Планирование:</strong> Алгоритм A* (глобальный) + DWB (локальное избегание препятствий).</li>
+                       <li><strong>Миссия:</strong> Скрипт Python, оркеструющий перемещение к целевым координатам с обработкой ошибок и перекалибровкой AMCL.</li>
+                       <li><strong>Производительность:</strong> Миссия выполнена за 83 с, 100% успешных попыток, общая задержка < 200 мс.</li>
+                   </ul>
+                   <h4>5. Галерея проекта</h4>
+                   <div class="modal-image-grid">
+                       <img src="gazebo_maison.png" alt="Симуляция Gazebo">
+                       <img src="slam_map_complete.png" alt="Картографирование SLAM в RViz">
+                       <img src="victim_detection_view.png" alt="Обнаружение OpenCV">
+                       <img src="mission_log.png" alt="Журналы автономной миссии ROS 2">
+                   </div>` 
+        }
     }
+};
 };
 
 // 2. TRADUCTIONS GÉNÉRALES DE LA PAGE

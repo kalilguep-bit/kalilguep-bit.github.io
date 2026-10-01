@@ -173,10 +173,10 @@ h2 {
     transition: width 1s ease-in-out;
 }
 
-/* --- PROJETS --- */
+/* --- PROJETS (Adapté pour 5 projets) --- */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* S'adapte automatiquement */
     gap: 2rem;
     margin-top: 2rem;
 }

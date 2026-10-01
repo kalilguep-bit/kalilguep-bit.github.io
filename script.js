@@ -273,54 +273,47 @@ const projectsData = {
                        <img src="mission_log.png" alt="Журналы автономной миссии ROS 2">
                    </div>` 
         },
-    proj5: {
-        img: "abaqus_flambage.png",
+     proj5: {
+        img: "deformee_post_flambage.png",
         tags: ["Abaqus", "FEA", "Composites", "Riks", "Buckling", "T700/M21"],
         fr: { 
-            title: "Flambage et Post-Flambage de Composite (Abaqus)", 
-            desc: `<p><strong>Contexte :</strong> Simulation avancée d'un panneau aéronautique en Carbone/Époxy T700 [0/45/-45/90]s pour prédire la charge critique et la tenue résiduelle post-rupture.</p>
+            title: "Flambage de Panneau Composite", 
+            desc: `<p><strong>Contexte :</strong> Simulation avancée d'un panneau aéronautique en Carbone/Époxy T700 pour prédire la charge critique et la tenue résiduelle post-rupture.</p>
                    <h4>1. Méthodologie FEA</h4>
                    <ul>
                        <li><strong>Analyse Linéaire (Buckle) :</strong> Extraction des modes propres et de la charge critique théorique.</li>
-                       <li><strong>Analyse Non-Linéaire (Riks) :</strong> Suivi de la courbe de réponse au-delà du point de bifurcation avec imperfection géométrique (0.02mm).</li>
+                       <li><strong>Analyse Non-Linéaire (Riks) :</strong> Suivi de la courbe de réponse au-delà du point de bifurcation avec imperfection géométrique.</li>
                    </ul>
                    <h4>2. Résultats Clés</h4>
-                   <p>Identification de la perte de rigidité post-flambage et validation de la capacité portante résiduelle de la structure. Analyse des contraintes de Von Mises et des déplacements hors-plan (U3).</p>
-                   <h4>3. Documentation Complète</h4>
-                   <p>Le projet inclut le modèle .cae, les scripts de post-traitement, la vidéo d'animation de la déformation et le rapport technique complet.</p>
-                   <a href="https://github.com/kalilguep-bit/panneau_composite_flambage" target="_blank" style="display:inline-block; margin-top:15px; padding:10px 20px; background:var(--accent-color); color:white; text-decoration:none; border-radius:8px; font-weight:bold;">🚀 Voir le projet sur GitHub</a>` 
+                   <p>Identification de la perte de rigidité post-flambage et validation de la capacité portante résiduelle. Analyse des contraintes de Von Mises et des déplacements hors-plan (U3).</p>
+                   <a href="https://github.com/kalilguep-bit/panneau_composite_flambage" target="_blank" style="display:inline-block; margin-top:15px; padding:10px 20px; background:var(--accent-color); color:white; text-decoration:none; border-radius:8px; font-weight:bold;"> Voir le projet sur GitHub</a>` 
         },
         en: { 
-            title: "Composite Panel Buckling (Abaqus)", 
-            desc: `<p><strong>Context:</strong> Advanced simulation of an aerospace Carbon/Epoxy T700 [0/45/-45/90]s panel to predict critical load and post-failure residual strength.</p>
+            title: "Composite Panel Buckling", 
+            desc: `<p><strong>Context:</strong> Advanced simulation of an aerospace Carbon/Epoxy panel to predict critical load and post-failure residual strength.</p>
                    <h4>1. FEA Methodology</h4>
                    <ul>
                        <li><strong>Linear Analysis (Buckle):</strong> Extraction of eigenmodes and theoretical critical load.</li>
-                       <li><strong>Non-Linear Analysis (Riks):</strong> Tracking the response curve beyond the bifurcation point with geometric imperfection (0.02mm).</li>
+                       <li><strong>Non-Linear Analysis (Riks):</strong> Tracking the response curve beyond the bifurcation point with geometric imperfection.</li>
                    </ul>
                    <h4>2. Key Results</h4>
-                   <p>Identification of post-buckling stiffness loss and validation of the structure's residual load capacity. Analysis of Von Mises stress and out-of-plane displacements (U3).</p>
-                   <h4>3. Full Documentation</h4>
-                   <p>The project includes the .cae model, post-processing scripts, deformation animation video, and the full technical report.</p>
+                   <p>Identification of post-buckling stiffness loss and validation of the structure's residual load capacity. Analysis of Von Mises stress and out-of-plane displacements.</p>
                    <a href="https://github.com/kalilguep-bit/panneau_composite_flambage" target="_blank" style="display:inline-block; margin-top:15px; padding:10px 20px; background:var(--accent-color); color:white; text-decoration:none; border-radius:8px; font-weight:bold;">🚀 View on GitHub</a>` 
         },
         ru: { 
-            title: "Потеря устойчивости композита (Abaqus)", 
-            desc: `<p><strong>Контекст:</strong> Расширенное моделирование аэрокосмической панели из углепластика T700 [0/45/-45/90]s для прогнозирования критической нагрузки и остаточной прочности.</p>
+            title: "Потеря устойчивости композита", 
+            desc: `<p><strong>Контекст:</strong> Расширенное моделирование аэрокосмической панели из углепластика для прогнозирования критической нагрузки и остаточной прочности.</p>
                    <h4>1. Методология МКЭ</h4>
                    <ul>
                        <li><strong>Линейный анализ (Buckle):</strong> Извлечение собственных форм и теоретической критической нагрузки.</li>
-                       <li><strong>Нелинейный анализ (Riks):</strong> Отслеживание кривой отклика за точкой бифуркации с геометрическим несовершенством (0.02 мм).</li>
+                       <li><strong>Нелинейный анализ (Riks):</strong> Отслеживание кривой отклика за точкой бифуркации с геометрическим несовершенством.</li>
                    </ul>
                    <h4>2. Ключевые результаты</h4>
                    <p>Выявление потери жесткости после потери устойчивости и подтверждение остаточной несущей способности конструкции.</p>
-                   <h4>3. Полная документация</h4>
-                   <p>Проект включает модель .cae, скрипты постобработки, видео анимации деформации и полный технический отчет.</p>
                    <a href="https://github.com/kalilguep-bit/panneau_composite_flambage" target="_blank" style="display:inline-block; margin-top:15px; padding:10px 20px; background:var(--accent-color); color:white; text-decoration:none; border-radius:8px; font-weight:bold;">🚀 Посмотреть на GitHub</a>` 
         }
     }
 };
-
 // 2. TRADUCTIONS GÉNÉRALES DE LA PAGE
 const translations = {
     fr: {

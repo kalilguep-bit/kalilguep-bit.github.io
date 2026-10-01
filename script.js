@@ -319,7 +319,6 @@ const projectsData = {
                    <a href="https://github.com/kalilguep-bit/panneau_composite_flambage" target="_blank" style="display:inline-block; margin-top:15px; padding:10px 20px; background:var(--accent-color); color:white; text-decoration:none; border-radius:8px; font-weight:bold;">🚀 Посмотреть на GitHub</a>` 
         }
     }
-    }
 };
 
 // 2. TRADUCTIONS GÉNÉRALES DE LA PAGE

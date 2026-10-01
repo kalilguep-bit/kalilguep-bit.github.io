@@ -380,7 +380,9 @@ const translations = {
         exp3_company: "FST Settat & UM6P - Settat, Maroc",
         exp3_mission1: "Étude et conception d'un biodigesteur CSTR (Continuous Stirred-Tank Reactor) de 1000L",
         exp3_mission2: "Établissement des cahiers des charges fonctionnel et technique (CdCF, CdCT)",
-        exp3_mission3: "Modélisation 3D paramétrique et simulation FEA pour validation structurelle"
+        exp3_mission3: "Modélisation 3D paramétrique et simulation FEA pour validation structurelle",
+        proj5_title: "Flambage de Panneau Composite",
+        proj5_short: "Analyse FEA non-linéaire (Riks) et prédiction de rupture sur Abaqus."
     },
     en: {
         name: "Belem Abdoul Kalilou",
@@ -439,6 +441,8 @@ const translations = {
         exp3_mission1: "Study and design of a 1000L CSTR biodigester",
         exp3_mission2: "Development of functional and technical specifications (CdCF, CdCT)",
         exp3_mission3: "Parametric 3D modeling and FEA simulation for structural validation",
+        proj5_title: "Composite Panel Buckling",
+        proj5_short: "Non-linear FEA (Riks) and failure prediction using Abaqus.",
     },
     ru: {
         name: "Белем Абдул Калилу",
@@ -497,6 +501,8 @@ const translations = {
         exp3_mission1: "Проектирование биореактора CSTR объемом 1000 л",
         exp3_mission2: "Разработка функциональных и технических спецификаций (CdCF, CdCT)",
         exp3_mission3: "Параметрическое 3D-моделирование и FEA-симуляция для структурной валидации",
+        proj5_title: "Потеря устойчивости композитной панели",
+        proj5_short: "Нелинейный МКЭ-анализ (Riks) и прогноз разрушения в Abaqus.",
     }
 };
 

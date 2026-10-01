@@ -336,6 +336,8 @@ const translations = {
         proj3_short: "Surveillance vibratoire industrielle (ESP32, MQTT, Power BI).",
         proj4_title: "Rover Autonome de Sauvetage (SAR)",
         proj4_short: "Robotique autonome avec ROS 2, SLAM et Vision par Ordinateur.",
+        proj5_title: "Flambage de Panneau Composite",
+        proj5_short: "Analyse FEA non-linéaire (Riks) et prédiction de rupture sur Abaqus.",
         read_more: "Lire la suite →",
         cat_cao: "CAO 3D",
         cat_sim: "Simulation & Automatisation",
@@ -373,8 +375,7 @@ const translations = {
         exp3_mission1: "Étude et conception d'un biodigesteur CSTR (Continuous Stirred-Tank Reactor) de 1000L",
         exp3_mission2: "Établissement des cahiers des charges fonctionnel et technique (CdCF, CdCT)",
         exp3_mission3: "Modélisation 3D paramétrique et simulation FEA pour validation structurelle",
-        proj5_title: "Flambage de Panneau Composite",
-        proj5_short: "Analyse FEA non-linéaire (Riks) et prédiction de rupture sur Abaqus."
+        
     },
     en: {
         name: "Belem Abdoul Kalilou",
@@ -396,6 +397,8 @@ const translations = {
         proj3_short: "Industrial vibration monitoring (ESP32, MQTT, Power BI).",
         proj4_title: "Autonomous Search & Rescue (SAR) Rover",
         proj4_short: "Autonomous robotics with ROS 2, SLAM, and Computer Vision.",
+        proj5_title: "Composite Panel Buckling",
+        proj5_short: "Non-linear FEA (Riks) and failure prediction using Abaqus.",
         read_more: "Read more →",
         cat_cao: "3D CAD",
         cat_sim: "Simulation & Automation",
@@ -456,6 +459,8 @@ const translations = {
         proj3_short: "Промышленный вибромониторинг (ESP32, MQTT, Power BI).",
         proj4_title: "Автономный поисково-спасательный ровер (SAR)",
         proj4_short: "Автономная робототехника с ROS 2, SLAM и компьютерным зрением.",
+        proj5_title: "Потеря устойчивости композитной панели",
+        proj5_short: "Нелинейный МКЭ-анализ (Riks) и прогноз разрушения в Abaqus.",
         read_more: "Читать далее →",
         cat_cao: "3D САПР",
         cat_sim: "Моделирование и автоматизация",
